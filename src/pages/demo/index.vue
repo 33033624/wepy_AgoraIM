@@ -42,7 +42,6 @@ export default class Index extends wepy.page {
       const judge = typeof Number(value)
       if (judge === 'number') {
         wepy.$store.dispatch(stepListener({
-          type: PRICE,
           payload: {
             count: Number(value)
           }

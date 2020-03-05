@@ -4,7 +4,7 @@
 <script>
   import wepy from 'wepy'
   import 'wepy-async-function'
-  import store from './store'
+  import './store/index.js'
   export default class extends wepy.app {
     globalData = {
     }

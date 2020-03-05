@@ -1,12 +1,9 @@
 import {createAction} from 'redux-actions'
 import {PRICE} from '../types'
-export const stepListener = createAction(PRICE, ({type, payload}) => {
+export const stepListener = createAction(PRICE, ({payload}) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve({
-        type,
-        ...payload
-      })
+      resolve(payload)
     }, 500)
   })
 })
