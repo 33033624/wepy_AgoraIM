@@ -2,7 +2,7 @@
 	"description": "wepy combine iview",
 	"setting": {
 		"urlCheck": false,
-		"es6": true,
+		"es6": false,
 		"postcss": false,
 		"minified": false,
 		"newFeature": true,
@@ -19,7 +19,7 @@
 	},
 	"compileType": "miniprogram",
 	"appid": "wx953b56c8a3616150",
-	"projectname": "iwepy",
+	"projectname": "wepy-weui-redux",
 	"miniprogramRoot": "dist/",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

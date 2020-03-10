@@ -2,10 +2,8 @@ import Tips from './Tips';
 import wepy from 'wepy';
 
 export default class WxUtils {
-  static tabUrls = ['/pages/home/template', '/pages/goods/category', '/pages/goods/cart', '/pages/customer/index_template', '/pages/customer/index_template'];
+  static tabUrls = [];
   static mapUrls = {
-    '/pages/shop/index': '/pages/home/template',
-    '/pages/home/home': '/pages/home/template'
   };
   static parseQrScene(scene, key) {
     if (scene == null || key == null) return null;

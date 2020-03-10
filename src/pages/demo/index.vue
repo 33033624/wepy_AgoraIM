@@ -21,8 +21,9 @@
 <script>
 import wepy from 'wepy'
 import { connect } from 'wepy-redux'
-import { PRICE } from '../../store/types'
-import { stepListener } from '../../store/actions'
+import { PRICE } from '@/store/types'
+import { stepListener } from '@/store/actions'
+import testApi from '@/api/testApi'
   @connect({
     price(state) {
       return state.test.price
@@ -33,6 +34,11 @@ import { stepListener } from '../../store/actions'
   })
 export default class Index extends wepy.page {
   onLoad () {
+    testApi().then(res => {
+      console.log(res, 'res==>>')
+    }).catch(e => {
+      console.log(e, 'e==>>')
+    })
     wepy.setNavigationBarTitle({
       title: 'weui+redux实现的demo'
     })
