@@ -23,7 +23,7 @@ import wepy from 'wepy'
 import { connect } from 'wepy-redux'
 import { PRICE } from '@/store/types'
 import { stepListener } from '@/store/actions'
-import testApi from '@/api/testApi'
+import { testApi } from '@/api/testApi'
   @connect({
     price(state) {
       return state.test.price
@@ -90,5 +90,8 @@ export default class Index extends wepy.page {
   width: 50px;
   border-bottom: 1px solid #000;
   text-align: center;
+}
+.scane-button{
+  height: 40px;
 }
 </style>

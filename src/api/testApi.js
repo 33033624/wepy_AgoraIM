@@ -1,5 +1,11 @@
 import Http from '@/utils/Http.js'
 const testApi = () => {
-  return Http.get('https://aqcx.lnch-tech.com/mini_program/wx/user/login', {}, true)
+  return Http.get('/testapi', {}, true)
 }
-export default testApi
+const miniprogramLogin = (params) => {
+  return Http.post('/login', params, true)
+}
+export {
+  testApi,
+  miniprogramLogin
+}

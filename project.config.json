@@ -18,11 +18,11 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"appid": "wx953b56c8a3616150",
+	"appid": "wx958f42867362578f",
 	"projectname": "wepy-weui-redux",
 	"miniprogramRoot": "dist/",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"libVersion": "2.10.1",
+	"libVersion": "2.10.4",
 	"condition": {}
 }
