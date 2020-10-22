@@ -1,51 +1,51 @@
-const path = require('path')
-var prod = process.env.NODE_ENV === 'production'
+const path = require("path");
+var prod = process.env.NODE_ENV === "production";
 
 module.exports = {
-  wpyExt: '.vue',
-  eslint: true,
+  wpyExt: ".vue",
+  eslint: false,
   cliLogs: !prod,
   resolve: {
     alias: {
-      '@': path.join(__dirname, 'src')
+      "@": path.join(__dirname, "src"),
     },
-    modules: ['node_modules']
+    modules: ["node_modules"],
   },
   compilers: {
     babel: {
       sourceMap: true,
-      presets: ['env'],
+      presets: ["env"],
       plugins: [
-        'transform-class-properties',
-        'transform-decorators-legacy',
-        'transform-object-rest-spread',
-        'transform-export-extensions'
-      ]
-    }
+        "transform-class-properties",
+        "transform-decorators-legacy",
+        "transform-object-rest-spread",
+        "transform-export-extensions",
+      ],
+    },
   },
-  plugins: {}
-}
+  plugins: {},
+};
 
 if (prod) {
   // 压缩sass
-  module.exports.compilers['sass'] = { outputStyle: 'compressed' }
+  module.exports.compilers["sass"] = { outputStyle: "compressed" };
 
   // 压缩js
   module.exports.plugins = {
     uglifyjs: {
       filter: /\.js$/,
-      config: {}
+      config: {},
     },
     imagemin: {
       filter: /\.(jpg|png|jpeg)$/,
       config: {
         jpg: {
-          quality: 80
+          quality: 80,
         },
         png: {
-          quality: 80
-        }
-      }
-    }
-  }
+          quality: 80,
+        },
+      },
+    },
+  };
 }
