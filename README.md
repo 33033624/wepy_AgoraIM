@@ -1,4 +1,4 @@
-# wepy+声网 IM
+# wepy+AgoraIM
 
 ### 安装环境
 
