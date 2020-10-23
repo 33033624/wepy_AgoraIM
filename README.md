@@ -156,6 +156,8 @@ npm run dev
 - 关闭代码压缩上传；
 - 打开不校验合法域名；
 
+### 参考文档
+
 > [WePY 开发文档参考](https://tencent.github.io/wepy/)
 
 > [声网 im 文档](https://docs.agora.io/cn/Real-time-Messaging/product_rtm?platform=All%20Platforms)
